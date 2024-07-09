@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    box-sizing: border-box;
+    color: black;
+}
+
+.parent {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('back.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.east, .west {
+    width: 50%;
+    text-align: center; 
+}
+
+.east img, .west img {
+    max-width: 100%; 
+    height: auto;
+}
+h2{
+    text-transform: uppercase;
+    font-family: Haettenschweiler;
+    font-size: 5px;
+}
+h1{
+    text-transform: uppercase;
+    font-family: Impact;
+    text-align: center;
+}
+.wrap{
+    background-color: beige;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+p{
+    padding-bottom: 10px;
+}

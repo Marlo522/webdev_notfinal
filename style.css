@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+.parent {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('back.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    max-width: 100%;
+    padding: 20px;
+    height: auto;
+}
+
+.Logo{
+    width: 30%;
+    min-height: 100px;
+    float: left;
+}
+.logo1{
+    width: 100px;
+    height: 100px;
+}
+.Nav {
+    width: 70%;
+    min-height: 100px;
+    float: right;
+    line-height: 100px;
+    align-content: center;
+}
+
+.Nav a {
+    display: inline-block; 
+    margin-left: 20px; 
+    color: white; 
+    text-decoration: none; 
+}
+
+h3{
+    float: left;
+    margin-left: 20px;
+    font-size: 20px;
+}
+h3:hover {
+    color: yellow;
+    
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0; 
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(17px);
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+    transition: width 0.3s ease;
+}
+
+.sidebar:hover {
+    width: 260px;
+}
+.sidebar .logo {
+    color: #000;
+    display: flex;
+    align-items: center;
+    padding: 25px 10px 15px;
+}
+.logo img {
+    width: 43px;
+    border-radius: 50%;
+}
+.logo h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-left: 15px;
+    display: none;
+}
+.sidebar:hover .logo h2 {
+    display: block;
+}
+.sidebar .links {
+    list-style: none;
+    margin-top: 20px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    height: calc(100% - 140px);
+}
+.sidebar .links::-webkit-scrollbar {
+    display: none;
+}
+.links li {
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+}
+.links li:hover {
+    cursor: pointer;
+    background: #0c0908;
+}
+.links h4 {
+    color: #222;
+    font-weight: 500;
+    display: none;
+    margin-bottom: 10px;
+}
+.links hr {
+    margin: 10px 8px;
+    border: 1px solid #4c4c4c;
+}
+.links li a {
+    padding: 10px;
+    color: white;
+    display: none;
+    font-weight: 500;
+    white-space: nowrap;
+    text-decoration: none;
+    line-height: 40px;
+}
+.sidebar:hover .links li a {
+    display: block;
+}
+.box {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 20px; 
+}
+.image:hover, .image1:hover  {
+    opacity: 0.5;
+  }
+h1{
+    font-family: Verdana;
+    padding-top: 80px;
+    padding-left: 150px;
+    font-size: 80px;
+    color: white;
+    
+}
+p{
+    padding: 50px 50px 50px 150px;
+    line-height: 40px;
+    font-family: Georgia;
+    text-align: justify;
+    font-size: 30px;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+h4{
+    text-align: center;
+    color: black;
+}
+.footer {
+    width: 100%;
+    min-height: 150px;
+    padding: 20px;
+    background-color: #0c0908;
+    color: white;
+    text-align: center;
+    
+}
+
+.Flogo{
+    width: 120px;
+    height: 80px;
+}
+.loc{
+    text-align: center;
+}
+h6{
+    padding-top: 300px;
+    padding-left: 100px;
+    margin:auto;
+    width:80%;
+    font-size: 20px;
+    text-align: justify;    
+    color: white;
+    font-family: Cambria;
+    text-align: value;
+}
+
+
+h6 span {
+    text-align: justify;
+}
+h5{
+    font-size: 20px;
+}
+.about_bg{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('about.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    
+}
+@media only screen and (max-width: 900px) {
+    .sidebar {
+        width: 80px;
+    }
+    .Nav{
+        display: none;
+    }
+    .box{
+    background-position: center;
+    background-size: cover;
+    min-height: 250px;
+    }
+    h1{
+        margin-left: 90px;
+        font-size: 10px;
+        padding: 0;
+        align-items: center;
+        margin-top: 20px;
+    }
+    p{
+        font-size: 15vh;
+        align-content: center;
+        padding: 20px;
+    }
+    .Logo{
+        margin-left: 50px;
+    }
+    .footer{
+        h5{
+        font-size: 15px;
+        text-align: center;
+        }
+    }
+    .sidebar:hover{
+        width: 150px;
+    }
+    .logo img{
+        width: 30px;
+    }
+    .logo h2{
+        font-size: 15px;
+    }
+    h6{
+        font-size: 20px;
+        padding-top: 200px;
+        text-align: left;
+    }
+    
+}
+@media only screen and (max-width: 1100px) {
+    .sidebar {
+        width: 80px;
+    }
+    .Nav{
+        align-content: center;
+    }
+    .Logo{
+        width: 10%;
+        padding-left: 20px;
+    }
+    h3{
+        font-size: 13px;
+        margin-left: 0;
+        padding-left:5px;
+        font-size: 16px;
+    }
+    .box{
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    width: auto;
+    }
+    h1{
+        margin-left: 90px;
+        font-size: 60px;
+        padding: 0;
+        align-items: center;
+        margin-top: 20px;
+    }
+    p{
+        font-size: 20px;
+        padding: 50px 50px 50px 100px; 
+    }
+    .Logo{
+        margin-left: 70px;
+    }
+    .footer{
+        h5{
+        font-size: 15px;
+        text-align: center;
+        }
+    }
+    .sidebar:hover{
+        width: 220px;
+    }
+    .logo img{
+        width: 40px;
+        margin-left: 15px;
+    }
+    .logo h2{
+        font-size: 15px;
+    }
+    .sidebar img{
+        margin-right: 12px;
+    }
+}
